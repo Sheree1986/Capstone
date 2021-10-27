@@ -1,0 +1,61 @@
+.Lan-container {
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
+    grid-template-rows: repeat(7, 1fr);
+    grid-gap: 10px;
+    width: 100vw;
+  }
+  
+  .save-container {
+    grid-column: 2 / span 2;
+    grid-row: 3 / span 4;
+    overflow-y: scroll;
+    background-color: chocolate;
+    border-radius: 10px;
+    padding-bottom: 10px;
+    height: 61vh;
+  }
+  
+  .save-container::-webkit-scrollbar {
+    width: 0.7rem;
+    overflow: hidden;
+  }
+  
+  .save-container::-webkit-scrollbar-track {
+    box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3);
+    border-radius: 10px;
+  }
+  
+  .save-container::-webkit-scrollbar-thumb {
+    background-color: darkgrey;
+    outline: 1px solid slategrey;
+    border-radius: 10px;
+  }
+  
+
+  
+  .map {
+    grid-column: 4 / span 2;
+    grid-row: 3 / span 4;
+  }
+  
+  @media (max-width: 768px) {
+    .travel-container {
+      grid-template-columns: repeat(4, 1fr);
+      grid-template-rows: 50vh 30vh 30vh 70vh;
+      gap: 20px;
+    }
+}
+    .save-container {
+      grid-column: 2 / span 2;
+      grid-row: 1 / span 1;
+      width: 70vw;
+      height: 50vh;
+    }
+  
+   
+    .map {
+      grid-column: 2 / span 2;
+      grid-row: 4 / span 1;
+      width: 70vw;
+    }

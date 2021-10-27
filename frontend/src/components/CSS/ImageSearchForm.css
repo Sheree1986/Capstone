@@ -1,0 +1,24 @@
+.form {
+  width: 700px;
+  background: radial-gradient(
+      circle,
+      transparent 20%,
+      #5189c2 20%,
+      rgb(38, 120, 202) 80%,
+      transparent 80%,
+      transparent
+    ),
+    radial-gradient(
+        circle,
+        transparent 20%,
+        rgb(18, 95, 172) 20%,
+        rgb(7, 37, 68) 80%,
+        transparent 80%,
+        transparent
+      )
+      50px 50px,
+    linear-gradient(#214d80 8px, transparent 8px) 0 -4px,
+    linear-gradient(90deg, #172a41 8px, transparent 8px) -4px 0;
+  background-color: rgb(8, 108, 207);
+  background-size: 100px 100px, 100px 100px, 50px 50px, 50px 50px;
+}
